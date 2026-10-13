@@ -320,6 +320,12 @@ a.by{text-decoration:none}
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
   .reveal{opacity:1;transform:none;filter:none}
 }
+/* iOS Safari: overflow:hidden doesn't clip blurred/animated layers to rounded corners, so clip explicitly */
+.banner{clip-path:inset(0 round 34px)}
+.folder-art{clip-path:inset(0 round 28px 28px 0 0)}
+.tcard .art{clip-path:inset(0 round 24px 24px 0 0)}
+.sheet-shell{clip-path:inset(0 round 36px 36px 0 0)}
+.panel{clip-path:inset(0 round 30px)}
 </style>
 </head>
 <body>
